@@ -11,6 +11,7 @@ from agents.serverless_agent import get_serverless_agent
 from tasks.assess_k8s import assess_k8s_task
 from tasks.assess_vm import assess_vm_task
 from tasks.assess_serverless import assess_serverless_task
+from tasks.gather_requirements import gather_user_requirements_task
 from tasks.summarize import summarize_task
 from dotenv import load_dotenv
 import os

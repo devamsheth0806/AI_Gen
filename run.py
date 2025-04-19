@@ -1,4 +1,4 @@
-from crew import fetch_initial_crew, crew
+from crew import fetch_initial_crew, fetch_crew
 
 if __name__ == "__main__":
     requirements = fetch_initial_crew().kickoff()
