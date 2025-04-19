@@ -4,19 +4,26 @@ def summarize_task(agent, user_input):
     return Task(
         description=(
             f"You are the Customer Agent.\n"
-            f"The developer provided the following deployment requirements on Azure:\n"
-            f"{user_input}\n\n"
-            f"Three expert agents (Kubernetes, VM, Serverless) have returned their recommended options "
-            f"based on these constraints.\n"
-            f"Your job is to read all their outputs, compare them carefully based on price, location, and suitability, "
-            f"and provide a final recommendation.\n\n"
-            f"Your final output should:\n"
-            f"1. Summarize each expert’s recommendation (1–2 lines each).\n"
-            f"2. Compare the pros and cons.\n"
-            f"3. Recommend ONE option as the final deployment strategy.\n"
-            f"4. Justify your decision based on the user's input.\n"
-            f"5. Specify all technical details along with price as list"
+            f"The developer has the following requirements:\n{user_input}\n\n"
+            f"You've received expert agent recommendations (Kubernetes, VM, Serverless).\n\n"
+            f"Your job is to:\n"
+            f"1. Summarize each agent's recommendation briefly (1–2 lines each).\n"
+            f"2. Identify the 2–3 best options based on cost, location, and suitability.\n"
+            f"3. Present those options to the developer clearly with their price.\n"
+            f"4. Ask the user to choose ONE option or say 'none'.\n\n"
+            f"💡 Use this format in your output:\n"
+            f"---\n"
+            f"💬 Summary:\n"
+            f"- Kubernetes Agent: ...\n"
+            f"- VM Agent: ...\n"
+            f"- Serverless Agent: ...\n\n"
+            f"✅ Recommended Options:\n"
+            f"Option A: <description> | Monthly Price: $X\n"
+            f"Option B: <description> | Monthly Price: $Y\n"
+            f"Option C: <description> | Monthly Price: $Z (optional)\n\n"
+            f"❓ Please choose one option (A, B, C) or 'none' to cancel:\n"
+            f"(e.g., 'I choose A' or 'none')"
         ),
-        expected_output="Final deployment recommendation with comparison.",
+        expected_output="List of 2-3 recommended options and a user prompt to select one or decline.",
         agent=agent
     )
