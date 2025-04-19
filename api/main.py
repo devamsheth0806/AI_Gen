@@ -25,6 +25,6 @@ async def analyze_deployment(input_data: UserInput):
 @app.post('/deploy')
 async def deploy_selection(selected_option: SelectedOption):
     try:
-        return await process_deployment_request(selected_option= selected_option.option.upper())
+        return await process_deployment_request(selected_option= selected_option.selected_option.upper())
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

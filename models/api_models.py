@@ -4,7 +4,7 @@ class UserInput(BaseModel):
     requirements: str
 
 class SelectedOption(BaseModel):
-    option: str
+    selected_option: str
 
 class Recommendation(BaseModel):
     label: str

@@ -12,6 +12,13 @@ st.title("🚀 AI Deployment Advisor with Masumi Payment")
 user_input = st.text_area("📝 Describe your deployment requirements:", 
                           placeholder="E.g. I want a low-cost scalable app under $50/month in US East.")
 
+if "recommendations" not in st.session_state:
+    st.session_state.recommendations = None
+    st.session_state.summary = ""
+    st.session_state.payment_url = ""
+    st.session_state.options_dict = {}
+
+
 if st.button("Get Recommendations"):
     with st.spinner("Sending to backend..."):
         payload = {
@@ -26,28 +33,37 @@ if st.button("Get Recommendations"):
             st.error(f"❌ Backend Error: {e}")
             st.stop()
 
-        # Step 2: Display Recommendation Summary
-        st.success("✅ Recommendations Received!")
-        st.markdown("### 🔎 Agent Summary")
-        st.write(data.get("summary", "No summary provided."))
+        st.session_state.summary = data.get("summary", "")
+        st.session_state.recommendations = json.loads(data.get("recommendations", "{}"))
+        st.session_state.payment_url = data.get("payment_url", "")
+        st.session_state.options_dict = st.session_state.recommendations
 
-        # Step 3: Show Top 3 Options as Radio Buttons
-        options = json.loads(data.get("recommendations", []))
-        if not options:
-            st.warning("No options received from backend.")
-            st.stop()
-        print(options)
-        option_strings = [f"{key}: {options[key]['description']} (${options[key]['monthly_cost']}/month)" for key in options.keys()]
-        selected = st.radio("Choose your preferred deployment option:", option_strings)
+if st.session_state.recommendations:
+    # Step 2: Display Recommendation Summary
+    st.success("✅ Recommendations Received!")
+    
+    st.subheader("🔎 Agent Summary")
+    st.write(st.session_state.summary)
 
-        # Step 4: Confirm Button → Redirect to Payment
-        if st.button("💳 Proceed to Payment"):
-            selected_index = option_strings.index(selected)
-            selected_option = options[selected_index]
+    st.subheader("💡 Recommended Options")
+    
+    option_strings = [
+        f"{key}: {val['description']} (${val['monthly_cost']}/month)"
+        for key, val in st.session_state.options_dict.items()
+    ]
+    selected_option_string = st.radio("Choose your preferred deployment option:",
+                                      options=option_strings,
+                                      key="selected_option")
+    
+    # Step 4: Confirm Button → Redirect to Payment
+    if st.button("💳 Proceed to Payment"):
+        # Find selected key (e.g., A, B, C)
+        selected_key = selected_option_string.split(":")[0]
 
-            payment_url = selected_option.get("payment_url") or data.get("payment_url")
-            if not payment_url:
-                st.error("Payment URL not found.")
-            else:
-                st.success("✅ Redirecting to Masumi Payment Page...")
-                st.markdown(f"👉 [Click here to pay]({payment_url})", unsafe_allow_html=True)
+        payment_url = f"{BACKEND_URL}/deploy"
+        payload = {'select_option': selected_key}
+        try:
+            response = requests.post(payment_url, json=payload)
+            st.success("Deployement Successful...")
+        except Exception as e:
+            st.exception('Unable to pay')

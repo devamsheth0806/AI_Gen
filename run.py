@@ -29,13 +29,3 @@ async def implement_selected_option(selected_option):
         await pay(recommendations.json, selected_option)
     else:
         print("❌ No payment triggered. Exiting.")
-
-# # 🔁 Main entry point (CLI mode)
-# async def main():
-#     requirement_text = input("🧑 Describe your deployment requirements:\n")
-#     summary, requirements = await get_recommendation_summary(requirement_text)
-#     recommendations = await get_top_options(summary, requirements)
-#     await implement_selected_option(recommendations)
-
-# if __name__ == "__main__":
-#     asyncio.run(main())
