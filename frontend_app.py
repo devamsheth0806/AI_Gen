@@ -32,12 +32,12 @@ if st.button("Get Recommendations"):
         st.write(data.get("summary", "No summary provided."))
 
         # Step 3: Show Top 3 Options as Radio Buttons
-        options = data.get("recommendations", [])
+        options = json.loads(data.get("recommendations", []))
         if not options:
             st.warning("No options received from backend.")
             st.stop()
-
-        option_strings = [f"{key}: {options[key]['description']} (${options[key]['monthly_cost']}/month)" for key in options.keys]
+        print(options)
+        option_strings = [f"{key}: {options[key]['description']} (${options[key]['monthly_cost']}/month)" for key in options.keys()]
         selected = st.radio("Choose your preferred deployment option:", option_strings)
 
         # Step 4: Confirm Button → Redirect to Payment
