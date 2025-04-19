@@ -3,18 +3,24 @@ from crewai import Task
 def gather_user_requirements_task(agent, developer_input):
     return Task(
         description=(
-            f"You received the following user message about their deployment needs:\n\n"
-            f"\"{developer_input}\"\n\n"
-            "Extract the following structured fields as a Python dictionary:\n"
-            "- max_budget (float, in USD per hour)\n"
-            "- location (string)\n"
-            "- performance_preference (string: low, medium, high)\n"
-            "- app_type (string)\n\n"
-            "⚠️ Respond with ONLY a valid **Python dictionary**. Do NOT use Markdown (no triple backticks).\n"
-            "⚠️ If the budget is specified as per day/week/month, evaluate it to per hour as a decimal float.\n"
-            "⚠️ Do NOT return math expressions like 3.60/24 — just return 0.15.\n"
-            "⚠️ No comments, no explanation, no extra text."
+            f"User input:\n\"{developer_input}\"\n\n"
+            "Extract all relevant deployment requirements as a **strict JSON object**.\n"
+            "Output format:\n"
+            "{\n"
+            "  \"max_budget\": 0.27,\n"
+            "  \"location\": \"us-west\",\n"
+            "  \"performance_preference\": \"high\",\n"
+            "  \"app_type\": \"web\",\n"
+            "  \"custom_scaling\": true,\n"
+            "  ... other relevant keys\n"
+            "}\n\n"
+            "✅ Rules:\n"
+            "- Return **only JSON**, no extra text\n"
+            "- Keep numbers in decimal or integer form (no strings)\n"
+            "- Use `true`/`false` for booleans\n"
+            "- Omit keys that aren’t relevant\n"
+            "Do NOT wrap your output in Markdown or code blocks. Return raw JSON in single line only."
         ),
-        expected_output="A valid Python dictionary with keys: max_budget, location, performance_preference, app_type.",
+        expected_output="Dynamic JSON of all relevant extracted keys",
         agent=agent
     )

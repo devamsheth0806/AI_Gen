@@ -13,17 +13,29 @@ from tasks.assess_vm import assess_vm_task
 from tasks.assess_serverless import assess_serverless_task
 from tasks.gather_requirements import gather_user_requirements_task
 from tasks.summarize import summarize_task
+from tasks.recommendation import recommend_task
 from dotenv import load_dotenv
-import os
 import ast
-
+import json
+def safe_parse(raw_string):
+    try:
+        return json.loads(raw_string)
+    except json.JSONDecodeError:
+        try:
+            return ast.literal_eval(raw_string)
+        except Exception:
+            raise ValueError("⚠️ Could not parse output as JSON or Python literal.")
+        
 from langchain_openai import ChatOpenAI
+
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 load_dotenv()
 
-openai_key = os.getenv("OPENAI_API_KEY")
 
-llm = ChatOpenAI(model="gpt-4")  
+llm = ChatOpenAI(model="gpt-4", temperature=0.8)  
+
+# llm = ChatGoogleGenerativeAI(model="gemini/gemini-pro", temperature=0.7)
 
 customer = get_customer_agent(llm)
 
@@ -42,16 +54,9 @@ def fetch_initial_crew():
     return Crew(agents=[customer], tasks=[gather_task])
 
 def fetch_crew(requirements):
-    try:
-        cleaned = requirements.raw.strip()
-        if cleaned.startswith("```"):
-            cleaned = cleaned.strip("`").replace("python", "").strip()
-        user_input = ast.literal_eval(cleaned)
-    except Exception as e:
-        print("❌ Could not parse structured input from agent.")
-        print("⚠️ Agent returned:", requirements.raw)
-        raise e
-
+    cleaned = requirements.raw.strip()
+    user_input = safe_parse(cleaned)
+    
     return Crew(
         agents=[k8s, vm, serverless, customer],
         tasks=[
@@ -59,5 +64,16 @@ def fetch_crew(requirements):
             assess_vm_task(vm, user_input),
             assess_serverless_task(serverless, user_input),
             summarize_task(customer, user_input)
+        ]
+    )
+
+def fetch_recommendation_crew(summary, requirements):
+    cleaned = requirements.raw.strip()
+    user_input = safe_parse(cleaned)
+    cleaned = summary.raw.strip()
+    return Crew(
+        agents=[customer],
+        tasks=[
+            recommend_task(customer, cleaned, user_input)
         ]
     )

@@ -1,14 +1,19 @@
 from masumi.payment import Payment, Amount
 from masumi.config import Config
-import re
 import os
+import ast 
+import json 
 
-def extract_price_from_summary(summary_raw: str, selected_option: str) -> float:
-    pattern = rf"Option {selected_option.upper()}:\s.*\|\sPrice:\s\$(\d+(\.\d+)?)"
-    match = re.search(pattern, summary_raw)
-    if match:
-        return float(match.group(1))
-    raise ValueError(f"Could not find price for Option {selected_option.upper()}")
+def safe_parse(raw_string):
+    try:
+        return json.loads(raw_string)
+    except json.JSONDecodeError:
+        try:
+            return ast.literal_eval(raw_string)
+        except Exception:
+            raise ValueError("⚠️ Could not parse output as JSON or Python literal.")
+        
+
 
 async def pay(result, selected_option): 
     # Payment configuration
@@ -17,6 +22,13 @@ async def pay(result, selected_option):
         payment_api_key=os.getenv("PAYMENT_API_KEY")
     )
 
+    try:
+        cleaned_result = safe_parse(result.strip())
+    except Exception as e:
+        print("❌ Could not parse structured input from agent.")
+        print("⚠️ Agent returned:", result)
+        raise e
+    
     agent_identifier = os.getenv("AGENT_IDENTIFIER")
 
     # Simulate input data being submitted for the selected task
@@ -25,7 +37,7 @@ async def pay(result, selected_option):
     }
 
     # Define payment amount
-    payment_amount = extract_price_from_summary(result.raw, selected_option)
+    payment_amount = cleaned_result[selected_option]['monthly_price']
     payment_unit = os.getenv("PAYMENT_UNIT", "USD")
     amounts = [Amount(amount=payment_amount, unit=payment_unit)]
 

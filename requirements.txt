@@ -9,3 +9,4 @@ httpx
 langchain_openai
 pysqlite3-binary
 sentence-transformers
+langchain-google-genai
