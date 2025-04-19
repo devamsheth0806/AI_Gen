@@ -17,6 +17,7 @@ def safe_parse(raw_string):
 
 async def pay(result, selected_option): 
     # Payment configuration
+    print(result)
     payment_config = Config(
         payment_service_url=os.getenv("PAYMENT_SERVICE_URL"),
         payment_api_key=os.getenv("PAYMENT_API_KEY")
@@ -33,11 +34,11 @@ async def pay(result, selected_option):
 
     # Simulate input data being submitted for the selected task
     task_input = {
-        "text": f"Deploy using strategy {selected_option.upper()}"
+        "text": f"Deploy using strategy {selected_option}"
     }
 
     # Define payment amount
-    payment_amount = cleaned_result[selected_option]['monthly_price']
+    payment_amount = cleaned_result[selected_option]['monthly_cost']
     payment_unit = os.getenv("PAYMENT_UNIT", "USD")
     amounts = [Amount(amount=payment_amount, unit=payment_unit)]
 
@@ -48,6 +49,7 @@ async def pay(result, selected_option):
     payment = Payment(
         agent_identifier=agent_identifier,
         config=payment_config,
+        amounts=amounts,
         identifier_from_purchaser=purchaser_id,
         input_data=task_input
     )
