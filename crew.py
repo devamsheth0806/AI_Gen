@@ -31,9 +31,8 @@ k8s = get_k8s_agent(llm)
 vm = get_vm_agent(llm)
 serverless = get_serverless_agent(llm)
 
-    
 
-def  fetch_initial_crew():    
+def fetch_initial_crew():    
     # Step 1: Simulate developer input
     developer_input = input("🧑 Describe your deployment requirements:\n")
 
@@ -43,7 +42,15 @@ def  fetch_initial_crew():
     return Crew(agents=[customer], tasks=[gather_task])
 
 def fetch_crew(requirements):
-    user_input = ast.literal_eval(requirements.raw)
+    try:
+        cleaned = requirements.raw.strip()
+        if cleaned.startswith("```"):
+            cleaned = cleaned.strip("`").replace("python", "").strip()
+        user_input = ast.literal_eval(cleaned)
+    except Exception as e:
+        print("❌ Could not parse structured input from agent.")
+        print("⚠️ Agent returned:", requirements.raw)
+        raise e
 
     return Crew(
         agents=[k8s, vm, serverless, customer],

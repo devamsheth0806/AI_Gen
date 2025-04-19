@@ -21,8 +21,6 @@ def summarize_task(agent, user_input):
             f"Option A: <description> | Monthly Price: $X\n"
             f"Option B: <description> | Monthly Price: $Y\n"
             f"Option C: <description> | Monthly Price: $Z (optional)\n\n"
-            f"❓ Please choose one option (A, B, C) or 'none' to cancel:\n"
-            f"(e.g., 'I choose A' or 'none')"
         ),
         expected_output="List of 2-3 recommended options and a user prompt to select one or decline.",
         agent=agent
