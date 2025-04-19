@@ -1,3 +1,7 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 from crewai import Crew
 from agents.customer_agent import get_customer_agent
 from agents.k8s_agent import get_k8s_agent
@@ -8,11 +12,10 @@ from tasks.assess_k8s import assess_k8s_task
 from tasks.assess_vm import assess_vm_task
 from tasks.assess_serverless import assess_serverless_task
 from tasks.summarize import summarize_task
-
-
 from dotenv import load_dotenv
 import os
 
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
@@ -21,8 +24,7 @@ openai_key = os.getenv("OPENAI_API_KEY")
 
 
 
-from openai import OpenAI
-llm = OpenAI(api_key=openai_key, model="gpt-4")  
+llm = ChatOpenAI(model="gpt-4")  
 
 customer = get_customer_agent(llm)
 k8s = get_k8s_agent(llm)

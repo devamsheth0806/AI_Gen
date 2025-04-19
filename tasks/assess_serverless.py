@@ -5,11 +5,7 @@ def assess_serverless_task(agent):
 
     serverless_options = deployment_options["serverless"]
     option_text = "\n".join(
-        [f"Cost: ${opt['price']}/hour.\n"
-            f"Product: {opt['product']}.\n"
-            f"Location: {opt['location']}.\n"
-            f"Meter Name: {opt['meter name']}.\n"
-         for opt in serverless_options]
+        [f"Cost: ${opt['price']}/hour, Product: {opt['product']}, Location: {opt['location']}, Meter Name: {opt['meterName']}" for opt in serverless_options]
     )
 
     return Task(

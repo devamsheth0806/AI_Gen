@@ -6,4 +6,5 @@ masumi
 pydantic
 python-multipart
 httpx
-openai
+langchain_openai
+sqlite3-binary

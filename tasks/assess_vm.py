@@ -4,11 +4,7 @@ from utils.dataset_utils import deployment_options
 def assess_vm_task(agent):
     vm_options = deployment_options["vm"]
     option_text = "\n".join(
-        [f"Cost: ${opt['price']}/hour.\n"
-            f"Product: {opt['product']}.\n"
-            f"Location: {opt['vm']['location']}.\n"
-            f"Meter Name: {opt['meter name']}.\n"
-         for opt in vm_options]
+        [f"Cost: ${opt['price']}/hour, Product: {opt['product']}, Location: {opt['location']}, Meter Name: {opt['meterName']}" for opt in vm_options]
     )
     return Task(
         description=(

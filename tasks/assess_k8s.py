@@ -4,8 +4,7 @@ from utils.dataset_utils import deployment_options
 def assess_k8s_task(agent):
     k8s_options = deployment_options["kubernetes"]
     option_text = "\n".join(
-        [f"Cost: ${opt['price']}/hour, Product: {opt['product']}, Location: {opt['location']}, Meter Name: {opt['meter name']}"
-         for opt in k8s_options]
+        [f"Cost: ${opt['price']}/hour, Product: {opt['product']}, Location: {opt['location']}, Meter Name: {opt['meterName']}" for opt in k8s_options]
     )
     return Task(
         description=(
