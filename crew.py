@@ -44,11 +44,8 @@ vm = get_vm_agent(llm)
 serverless = get_serverless_agent(llm)
 
 
-def fetch_initial_crew():    
-    # Step 1: Simulate developer input
-    developer_input = input("🧑 Describe your deployment requirements:\n")
-
-    # Step 2: Run the gather requirements task
+def fetch_initial_crew(developer_input):    
+    # Run the gather requirements task
     gather_task = gather_user_requirements_task(customer, developer_input)
 
     return Crew(agents=[customer], tasks=[gather_task])

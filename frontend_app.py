@@ -15,12 +15,11 @@ user_input = st.text_area("📝 Describe your deployment requirements:",
 if st.button("Get Recommendations"):
     with st.spinner("Sending to backend..."):
         payload = {
-            "identifier_from_purchaser": "streamlit_user_001",  # can be dynamic
-            "input_data": {"text": user_input}
+            "requirements": user_input
         }
 
         try:
-            response = requests.post(f"{BACKEND_URL}/start_job", json=payload)
+            response = requests.post(f"{BACKEND_URL}/analyze", json=payload)
             response.raise_for_status()
             data = response.json()
         except Exception as e:
@@ -33,12 +32,12 @@ if st.button("Get Recommendations"):
         st.write(data.get("summary", "No summary provided."))
 
         # Step 3: Show Top 3 Options as Radio Buttons
-        options = data.get("recommended_options", [])
+        options = data.get("recommendations", [])
         if not options:
             st.warning("No options received from backend.")
             st.stop()
 
-        option_strings = [f"{opt['label']}: {opt['description']} (${opt['price']}/month)" for opt in options]
+        option_strings = [f"{key}: {options[key]['description']} (${options[key]['monthly_cost']}/month)" for key in options.keys]
         selected = st.radio("Choose your preferred deployment option:", option_strings)
 
         # Step 4: Confirm Button → Redirect to Payment
