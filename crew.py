@@ -23,36 +23,34 @@ load_dotenv()
 
 openai_key = os.getenv("OPENAI_API_KEY")
 
-
-
-
 llm = ChatOpenAI(model="gpt-4")  
+
+customer = get_customer_agent(llm)
+
+k8s = get_k8s_agent(llm)
+vm = get_vm_agent(llm)
+serverless = get_serverless_agent(llm)
+
+    
 
 def  fetch_initial_crew():    
     # Step 1: Simulate developer input
     developer_input = input("🧑 Describe your deployment requirements:\n")
 
-    # step 2: 
-    customer = get_customer_agent(llm)
-
-    # Step 3: Run the gather requirements task
+    # Step 2: Run the gather requirements task
     gather_task = gather_user_requirements_task(customer, developer_input)
 
     return Crew(agents=[customer], tasks=[gather_task])
 
 def fetch_crew(requirements):
-    k8s = get_k8s_agent(llm)
-    vm = get_vm_agent(llm)
-    serverless = get_serverless_agent(llm)
+    user_input = ast.literal_eval(requirements.raw)
 
-    user_input = ast.literal_eval(requirements)
-
-    crew = Crew(
+    return Crew(
         agents=[k8s, vm, serverless, customer],
         tasks=[
             assess_k8s_task(k8s, user_input),
             assess_vm_task(vm, user_input),
             assess_serverless_task(serverless, user_input),
-            summarize_task(customer)
+            summarize_task(customer, user_input)
         ]
     )

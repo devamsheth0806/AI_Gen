@@ -1,9 +1,8 @@
 from crewai import Task
-from utils.dataset_utils import deployment_options
+from utils.dataset_utils import filter_deployments
 
-def assess_serverless_task(agent):
-
-    serverless_options = deployment_options["serverless"]
+def assess_serverless_task(agent, user_input):
+    serverless_options = options = filter_deployments(service_key='serverless', user_input=user_input)
     option_text = "\n".join(
         [f"Cost: ${opt['price']}/hour, Product: {opt['product']}, Location: {opt['location']}, Meter Name: {opt['meterName']}" for opt in serverless_options]
     )
@@ -14,6 +13,7 @@ def assess_serverless_task(agent):
             f"{option_text}\n\n"
             f"Based on cost, performance, and complexity, recommend the most suitable serverless deployment "
             f"option from the list, and explain why."
+            f"Keep your options specific to requirements and the list"
         ),
         expected_output="Recommendation on Serverless deployment",
         agent=agent
