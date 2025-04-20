@@ -1,0 +1,415 @@
+[
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.175,
+    "location": "CA Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.169,
+    "location": "AE North"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.196,
+    "location": "JA East"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.176,
+    "location": "ZA North"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.18,
+    "location": "KR Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.182,
+    "location": "IN West Jio"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.182,
+    "location": "IN Central Jio"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.169,
+    "location": "EU West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.1911,
+    "location": "NZ North"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.182,
+    "location": "AU Central 2"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.224,
+    "location": "CL Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.178,
+    "location": "ID Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.182,
+    "location": "IN South"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.2197,
+    "location": "SE South"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.166,
+    "location": "US West Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.16,
+    "location": "US East 2"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.169,
+    "location": "SE Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.185,
+    "location": "FR Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.2379,
+    "location": "BR Southeast"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.183,
+    "location": "BR South"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.177,
+    "location": "AU Southeast"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.165,
+    "location": "US South Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.187,
+    "location": "JA West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.169,
+    "location": "PL Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.182,
+    "location": "IN Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.167,
+    "location": "EU North"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.197,
+    "location": "DE North"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.17,
+    "location": "US West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.2,
+    "location": "US Gov Virginia"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.24167,
+    "location": "NO West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.176,
+    "location": "MX Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.191,
+    "location": "ZA West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.174,
+    "location": "KR South"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.178,
+    "location": "AP Southeast"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.16,
+    "location": "US West 2"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.16,
+    "location": "US West 3"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.2,
+    "location": "AP East"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.18,
+    "location": "CH North"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.1859,
+    "location": "QA Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.182,
+    "location": "AU East"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.2,
+    "location": "US Gov AZ"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.169,
+    "location": "ES Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.206,
+    "location": "FR South"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.169,
+    "location": "DE West Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.234,
+    "location": "CH West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.182,
+    "location": "IN West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.169,
+    "location": "IT North"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.17,
+    "location": "CA East"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.173,
+    "location": "US East"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.1859,
+    "location": "IL Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.186,
+    "location": "AE Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.185,
+    "location": "UK South"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.1859,
+    "location": "NO East"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.173,
+    "location": "US Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.173,
+    "location": "US North Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.185,
+    "location": "UK West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.182,
+    "location": "AU Central"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.173,
+    "location": "MY West"
+  },
+  {
+    "serviceName": "Functions",
+    "product": "Premium Functions",
+    "meterName": "Premium vCPU Duration",
+    "price": 0.2,
+    "location": "US Gov TX"
+  }
+]

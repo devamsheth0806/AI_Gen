@@ -1,0 +1,800 @@
+[
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US North Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "EU West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "AP East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "IN Central Jio"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "EU West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "CA Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "MY West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "JA West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "SGX Singapore 1"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "JA West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "IN Central Jio"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "NO West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US West 3"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "NZ North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "ID Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "IN South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US East 2"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "Global"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "BR South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "CA East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "ZA West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "AE North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US Gov Virginia"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "AU Southeast"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "UK West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US North Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "ES Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "UK South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "JA East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "KR South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US East 2"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "CH North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US Gov TX"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "ATT Detroit 1"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "ES Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "EU North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "AE Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "BR Southeast"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "ATT Dallas 1"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "PL Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "ATT New York 1"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "NZ North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "SE Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "BR Southeast"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "EU North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US Gov Virginia"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "DE North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "NO West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "FR Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "ZA North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "QA Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "ID Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "IL Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "DE West Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "KR Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "CL Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "UK West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "DE North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "AU Central 2"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "IN West Jio"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "AP East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "IN Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "SE South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "SE Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "AU East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "PL Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "MY West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "IN West Jio"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "AP Southeast"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US West 2"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "ATT Atlanta 1"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "KR South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "MX Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US West 3"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "FR South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US Gov TX"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US West 2"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "UK South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "CA East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "IN South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "BR South"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "AU Southeast"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "AU Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "NO East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US South Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "CH West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "JA East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "CH North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "AP Southeast"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "US Gov AZ"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US West Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US South Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "CL Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "ZA North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "QA Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "DE West Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "IN Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "CA Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "AU East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "FR Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "NO East"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "MX Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "IT North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "IL Central"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "US Gov AZ"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "CH West"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Uptime SLA",
+    "price": 0.1,
+    "location": "AE North"
+  },
+  {
+    "serviceName": "Azure Kubernetes Service",
+    "product": "Azure Kubernetes Service",
+    "meterName": "Standard Long Term Support",
+    "price": 0.6,
+    "location": "KR Central"
+  }
+]
